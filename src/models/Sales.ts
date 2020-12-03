@@ -1,10 +1,9 @@
 import mongoose from 'mongoose';
 
-
 let salesSchema = new mongoose.Schema({
   saleDate: {
     type: Date,
-    default: Date.now
+    default: new Date(),
   },
   saleValue: {
     type: Number,
